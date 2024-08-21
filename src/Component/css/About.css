@@ -1,0 +1,9 @@
+p span {
+    position: relative;
+    color: #666;
+    font-size: 1.5em;
+    transition: .25s;
+}
+.active{
+    color: #64F4AB;
+}

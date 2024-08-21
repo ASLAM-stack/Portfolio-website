@@ -1,0 +1,212 @@
+.Rapper{
+    width: 100% !important;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+     
+    min-height: 50px;
+}
+#conten_rap{
+    width: 100%;
+}
+.Rapper .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.Rapper .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+.Rapper .contactInfo .box .icon {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: repeating-conic-gradient(from 27.5deg,#01dbc2 0%,#01dbc2 10%,transparent 10%,transparent 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Rapper .contactInfo .box .icon::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background : repeating-conic-gradient(from 117.5deg,#01dbc2 0%,#01dbc2 10%,transparent 10%,transparent 50%);
+}
+.Rapper .contactInfo .box .icon::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #222;
+}
+.Rapper .contactInfo .box .icon b{
+    position: absolute;
+    inset: 8px;
+    background: #01dbc2;
+    z-index: 2;
+}
+.Rapper .contactInfo .box .icon .icons{
+    position: relative;
+    z-index: 1000;
+    color: #333;
+    font-size: 1.25em;
+}
+.Rapper .contactInfo .box .text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight:  300;
+}
+.Rapper .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #01dbc2;
+}
+.Rapper .contactInfo .txt{
+    color: #fff;
+    margin-top: 50px;
+    font-weight: 500;
+    border-left: 50px solid #01dbc2;
+    padding-left: 10px;
+    line-height: 1em;
+    font-size: 1.2em;
+}
+.icon_link {
+     color: #fff;
+     font-size: 1.5em;
+     transition: 0.25s;
+}
+.icon_link:hover{
+    color: #01dbc2;
+    filter: drop-shadow(0 0 5px #01dbc2);
+}
+.Rapper .contactForm{
+    position: relative;
+    width: 40%;
+    background: repeating-conic-gradient(from var(--a),#01dbc2 0%,#01dbc2 10%,transparent 10%,transparent 50%);
+    animation: amimate 6s linear infinite;
+    padding: 60px;
+}
+.Rapper .contactForm::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a),#01dbc2 0%,#01dbc2 10%,transparent 10%,transparent 50%);
+    animation: amimate 6s linear infinite;
+    animation-delay: -1.5s; 
+}
+.Rapper .contactForm::after{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border: 20px solid #1d232a;
+    background: #333;
+}
+.Rapper .contactForm form {
+    position: relative;
+    z-index: 10;
+}
+.Rapper .contactForm form h2{
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+.Rapper .contactForm form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.Rapper .contactForm form .inputBox input,
+.Rapper .contactForm form .inputBox textarea{
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #01dbc2;
+    color: #fff;
+    outline: none;
+    resize: none !important;
+}
+ 
+
+.Rapper .contactForm form .inputBox span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 1.1em;
+}
+.Rapper .contactForm form .inputBox input:focus ~ span,
+.Rapper .contactForm form .inputBox textarea:focus ~ span,
+.Rapper .contactForm form .inputBox input:valid ~ span,
+.Rapper .contactForm form .inputBox textarea:valid ~ span
+{
+    color: #01dbc2;
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
+.Rapper .contactForm form .inputBox input[type="submit"]{
+    width: 100%;
+    background: #01dbc2;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #222;
+}
+@property --a 
+{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes amimate {
+    0%
+    {
+        --a:0deg;
+    }
+    100%
+    {
+        --a:360deg;
+    }
+}
+@media (max-width:991px) {
+    .Rapper .contactForm{
+        width: 50%;
+    }
+    .Rapper .contactInfo{
+        width: 40%;
+    }
+}
+@media (max-width:856px) {
+    .Rapper{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .Rapper .contactForm,
+    .Rapper .contactInfo{
+        width: 100%;
+        
+    }
+}
+@media (max-width:399px){
+    .contact_email{
+        font-size: 10px;
+    }
+    .Rapper .contactForm form .inputBox textarea{
+        font-size: 1.9em !important;
+    }
+}

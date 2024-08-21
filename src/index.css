@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+    scroll-behavior: smooth;
+}
+.work{
+    font-family: "Work Sans", sans-serif;
+}
+.satis{
+    font-family: "Satisfy", cursive;
+  }
+.robo{
+    font-family: "Roboto", sans-serif;
+}
+.pop{
+    font-family: "Poppins", sans-serif;
+}
+.mon{
+    font-family: "Montserrat", sans-serif;
+}
+img{
+    width: 100%;
+}
+.contact_btn{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 400;
+    padding: 10px 20px;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+}
+.contact_btn:hover{
+    letter-spacing: .25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+.contact_btn::before{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+.contact_btn span{
+    position: relative;
+    z-index: 1;
+}
+.contact_btn i::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background:#27282c;
+    transform: translate(-50%),skewX(325deg);
+    transition: 0.5s;
+}
+.contact_btn:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+.contact_btn i::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background:#27282c;
+    transform: translate(-50%),skewX(325deg);
+    transition: 0.5s;
+}
+.contact_btn:hover i::after{
+    width: 20px;
+    left: 80%;
+}
+#profile_pic{
+    background-size: 100%;
+}
+/* .custom-shape-divider-bottom-1720074573 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1720074573 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1720074573 .shape-fill {
+    fill: #FFFFFF;
+} */
