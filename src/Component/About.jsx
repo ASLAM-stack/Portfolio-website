@@ -37,10 +37,10 @@ const About = () => {
     }, []); // Empty dependency array means this effect runs once after initial render
 
     return (
-        <div className="max-w-7xl mx-auto">
-            <div className="flex justify-between items-center ">
-                <div id='about' className="about_img w-full md:w-1/3">
-                    <img src="/person.png" alt="Person" />
+        <div className="max-w-7xl mx-auto mt-10">
+            <div className="flex justify-between items-center flex-wrap gap-5 p-5 md:p-0">
+                <div id='about' className="about_img w-full  md:w-[40%]">
+                    <img src="/aslampro.png" alt="Person" />
                 </div>
                 <div className="about_description box w-full md:w-1/2">
                     <div>

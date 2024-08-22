@@ -40,7 +40,7 @@ const Banner = () => {
           </div>
           <div id="profile_pic" className="bg-[url('/green-border-2.png')] bg-no-repeat w-full md:w-2/5 bg-bottom bg-cover flex justify-center items-end">
           <div className="mask mask-circle flex justify-center items-center">
-          <img className="w-2/3" src="/person.png" alt="" />
+          <img className="" src="/Aslam.jpg" alt="" />
           </div>
           </div>
         </div>
