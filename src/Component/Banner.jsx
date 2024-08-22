@@ -25,9 +25,9 @@ const Banner = () => {
                   </div>
                   
                   <div className="flex gap-2 h-20 items-center">
-                  <a href="" target="_blank" className="w-[50px] h-[50px] flex justify-center items-center rounded-xl shadow-[#1e9bff]  shadow-sm hover:-translate-y-2 duration-500" ><FiLinkedin className="text-2xl " /></a>
-                  <a href="" className="w-[50px] h-[50px] flex justify-center items-center rounded-xl shadow-[#1e9bff]  shadow-sm hover:-translate-y-2 duration-500" target="_blank"> <IoLogoGithub  className="text-2xl"/></a>
-                  <a href="" className="w-[50px] h-[50px] flex justify-center items-center rounded-xl shadow-[#1e9bff]  shadow-sm hover:-translate-y-2 duration-500" target="_blank"><FaFacebookF  className="text-2xl"/></a>
+                  <a href="https://www.linkedin.com/in/arif-hossain-aslam/" target="_blank" className="w-[50px] h-[50px] flex justify-center items-center rounded-xl shadow-[#1e9bff]  shadow-sm hover:-translate-y-2 duration-500" ><FiLinkedin className="text-2xl " /></a>
+                  <a href="https://github.com/ASLAM-stack" className="w-[50px] h-[50px] flex justify-center items-center rounded-xl shadow-[#1e9bff]  shadow-sm hover:-translate-y-2 duration-500" target="_blank"> <IoLogoGithub  className="text-2xl"/></a>
+                  <a href="https://www.facebook.com/arifhossain.aslam/" className="w-[50px] h-[50px] flex justify-center items-center rounded-xl shadow-[#1e9bff]  shadow-sm hover:-translate-y-2 duration-500" target="_blank"><FaFacebookF  className="text-2xl"/></a>
                   
                
                 
