@@ -4,8 +4,38 @@ import { IoCallSharp } from 'react-icons/io5';
 import { IoMdMail } from 'react-icons/io';
  
 import { ImFacebook2 } from 'react-icons/im';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "52207a6d-c37a-47a2-8c78-93f41c108964");
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: json
+        }).then((res) => res.json());
+    
+        if (res.success) {
+          console.log("Success", res);
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Your message has been send",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        }
+      };
     return (
         <div id='contact' className="max-w-7xl mx-auto my-24" >
              <div>
@@ -51,20 +81,20 @@ Got a project or just want to connect? Feel free to reach out for <br /> any web
                         </ul>
                     </div>
                     <div className="contactForm">
-                        <form  >
+                        <form onSubmit={onSubmit} >
                         <h2>Send Message</h2>
                             <div className="inputBox">
                                 
-                                <input type="text" className="text " required/>
+                                <input type="text" className="text " name='name' required/>
                                 <span>Full Name</span>
                             </div>
                             <div className="inputBox">
                                  
-                                <input type="email" className="text " required/>
+                                <input type="email" className="text " name='email' required/>
                                 <span>Email</span>
                             </div>
                             <div className="inputBox">
-                                 <textarea rows={1} name="" id="" required></textarea>
+                                 <textarea rows={1} name="message" id=""  required></textarea>
                                 <span>Type Your Message</span>
                             </div>
                             <div className="inputBox">

@@ -12,13 +12,12 @@ import { FaGithub, FaGitlab } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 
 const CardPort = ({img,Live,client,sever,alt,pName,description}) => {
-  console.log(img);
-  console.log(client);
+   
     return (
         <Card className="w-full shadow-lg">
         <CardHeader floated={false}  >
-          <div id="project" className={` bg-cover bg-top  hover:bg-bottom  duration-[8s] w-full h-64 rounded-t-md bg-[url('${img}')]`} >
-           
+          <div id="project" className={` bg-cover bg-top  hover:bg-bottom  duration-[8s] w-full h-64 rounded-t-md bg-[url("${img}")]`} >
+           <img src={img} alt="" />
           </div>
           <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
           <IconButton

@@ -15,7 +15,7 @@ const Banner = () => {
               <div className="space-y-3 flex flex-col justify-center">
                 <h1 className="mon md:text-7xl text-2xl text-white ">Hello</h1>
                 <h1 className="mon md:text-6xl text-2xl text-white font-semibold ">I&apos;m <span>
-                  <Typewriter cursor cursorColor="red" words={["Arif Hossain Aslam", "Web Developer", "React Developer","MERN STACK"]}
+                  <Typewriter cursor cursorColor="#64F4AB" words={["Arif Hossain Aslam", "Web Developer", "React Developer","MERN STACK",'UI/UX Developer']}
                      loop={false}/> 
                   </span> </h1>
                 <p className="text-gray-300 text-lg">Feel comfortable learning and exploring coding and technology. And because of the passion and love for coding and technology, choosing this sector as a career.</p>

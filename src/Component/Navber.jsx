@@ -42,9 +42,9 @@ const Navber = () => {
     <ul className="menu menu-horizontal px-1">
      <li className="robo text-base font-meduim text-white hover:text-[#1e9bff] hover:bg-none hover:border-[#1e9bff]"><a href="">Home</a></li>
          <li className="robo text-base font-meduim text-white hover:text-[#1e9bff] hover:bg-none hover:border-[#1e9bff]"><a href="/#about">About</a></li>
-         <li className="robo text-base font-meduim text-white hover:text-[#1e9bff] hover:bg-none hover:border-[#1e9bff]"><a href="">Service</a></li>
+         <li className="robo text-base font-meduim text-white hover:text-[#1e9bff] hover:bg-none hover:border-[#1e9bff]"><a href="/#skills">Skills</a></li>
          {/*   <li><a href="">Skills</a></li> */}
-         <li className="robo text-base font-meduim text-white hover:text-[#1e9bff] hover:bg-none hover:border-[#1e9bff]"><a href="">Portfolio</a></li>
+         <li className="robo text-base font-meduim text-white hover:text-[#1e9bff] hover:bg-none hover:border-[#1e9bff]"><a href="/#portfolio">Portfolio</a></li>
          <li className="robo text-base font-meduim text-white hover:text-[#1e9bff] hover:bg-none hover:border-[#1e9bff]"><a href="">Blogs</a></li>
     </ul>
   </div>
