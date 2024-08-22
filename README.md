@@ -186,9 +186,9 @@ This website is deployed on [Netlify](https://arifhossainaslam.netlify.app/). Yo
 
 If you have any questions or would like to discuss potential collaborations, feel free to reach out to me:
 
-- **Email**: arif.hossain.aslam123@gmail.com
+- **Email**: arifhossainaslam6@gmail.com
 - **LinkedIn**: [Arif Hossain Aslam](https://www.linkedin.com/in/arif-hossain-aslam)
-- **GitHub**: [Aslam0123](https://github.com/ASLAM-stack)
+- **GitHub**: [ASLAM-stack](https://github.com/ASLAM-stack)
 
 ## License
 
@@ -199,9 +199,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or would like to discuss potential collaborations, feel free to reach out to me:
 
-- **Email**: arif.hossain.aslam123@gmail.com
+- **Email**: arifhossainaslam6@gmail.com
 - **LinkedIn**: [Arif Hossain Aslam](https://www.linkedin.com/in/arif-hossain-aslam/)
-- **GitHub**: [Aslam0123](https://github.com/Aslam0123)
+- **GitHub**: [ASLAM-stack](https://github.com/Aslam0123)
 
 ## License
 
