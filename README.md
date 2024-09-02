@@ -146,7 +146,7 @@ Here are some of the key projects featured on this website:
 2. **Insightize**: A query and alternative products website that demonstrates my skills in building data-driven applications.
 3. **Trektek**: A project focusing on trekking experiences, using React for the frontend and Node.js for the backend.
 
-For more details on each project, please visit the [Projects](#projects) section of the website.
+For more details on each project, please visit the [Projects](https://arifhossainaslam.netlify.app/#portfolio) section of the website.
 
 ## Getting Started
 

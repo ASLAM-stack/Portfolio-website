@@ -2,6 +2,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import { IoLogoGithub } from "react-icons/io";
 import { Typewriter } from "react-simple-typewriter";
+import Skills from "./Skills";
 
 const Banner = () => {
   
@@ -20,6 +21,7 @@ const Banner = () => {
                   </span> </h1>
                 <p className="text-gray-300 text-lg">Feel comfortable learning and exploring coding and technology. And because of the passion and love for coding and technology, choosing this sector as a career.</p>
                 <div>
+                  <div>
                   <div className="flex items-center gap-1">
                   <hr className="w-4 border-[#327A56]"/> <p className="satis text-[#64F4AB] underline text-xl"> Contact With me</p>
                   </div>
@@ -32,6 +34,11 @@ const Banner = () => {
                
                 
                 </div>
+                  </div>
+                  {/* skills btn  */}
+                  <div>
+                    <Skills></Skills>
+                  </div>
                 </div>
 
               </div>
